@@ -9,4 +9,7 @@ COPY src .
 
 RUN go build -v -o /usr/local/bin/tsnsrv
 
+FROM alpine:3
+COPY --from=builder /usr/local/bin/tsnsrv /usr/local/bin/tsnsrv
+
 CMD ["tsnsrv"]
