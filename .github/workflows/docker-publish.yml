@@ -41,7 +41,7 @@ jobs:
       - name: Clone tsnsrv
         uses: actions/checkout@v3
         with:
-          repository: peterkeen/tsnsrv
+          repository: antifuchs/tsnsrv
           path: src
 
       - name: Setup Docker buildx
